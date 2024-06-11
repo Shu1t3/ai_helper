@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  ai_helper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8841:8501"
+
+    restart: always
